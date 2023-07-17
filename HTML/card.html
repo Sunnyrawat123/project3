@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            width:100%;
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container{
+            width:100vw;
+            height: auto;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .Card
+        {
+            width:250px;
+            height: 350px;
+  
+            border-radius: 10px;
+            box-shadow:  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px;
+            overflow: hidden;
+         
+        }
+
+        #card-1{
+            background-image: url(/IMAGES/images.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        #card-2{
+            background-image: url(/IMAGES/mandrill.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        #card-3{
+            background-image: url(/IMAGES/wihte.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+
+        .inner{
+            width: 100%;
+            color: white;
+            background-color:rgba(0.5,0.5, 0.5, 0.25);
+            border-radius: 10px;
+           transform:translatey(300px);
+            
+        }
+
+
+        h1{
+            margin-left: 5px;
+            
+            
+            font-size:30px;
+        }
+        p{
+            padding:20px;
+            font-size: 12px;
+        }
+
+
+        .Card:hover .inner  
+        {
+           background-color: black;
+           transform:translatey(200px);
+           
+           transition-delay: 0.3;
+           transition-duration: 0.5s;
+           
+         
+        }
+
+        .line
+        {
+            width:40px;
+            height:5px;
+            background-color:rgb(94, 165, 94);
+            margin-left: 8px;
+
+        }
+
+        .inner:hover .line{
+            width:150px;
+
+            transition-duration: 0.5s;
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Card" id="card-1">
+        
+            <div class="inner">
+                <h1>Cheeta</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum expedita deleniti aliquid delectus aperiam molestiae iure illum possimus eos recusandae.</p>
+            </div>
+        </div>
+        <div class="Card" id="card-2"> 
+           
+
+            <div  class="inner">
+                <h1>Mandrill</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum expedita deleniti aliquid delectus aperiam molestiae iure illum possimus eos recusandae.</p>
+            </div>
+        </div>
+        <div class="Card" id="card-3"> 
+         
+
+            <div  class="inner">
+                <h1>White Tiger</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum expedita deleniti aliquid delectus aperiam molestiae iure illum possimus eos recusandae.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
